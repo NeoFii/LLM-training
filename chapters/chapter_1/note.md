@@ -168,7 +168,7 @@ weight_decay: 0.01
 |train_loss|0.0692|0.073|0.0543|
 |eval_loss|0.322|0.2425|0.2383|
 
-下一步环节过拟合的方法：早停、减少epoch
+下一步缓解过拟合的方法：早停、减少epoch
 
 [完整图表:  https://swanlab.cn/@reed/BERT_fine_tuning/overview](https://swanlab.cn/@reed/BERT_fine_tuning/runs)
 
