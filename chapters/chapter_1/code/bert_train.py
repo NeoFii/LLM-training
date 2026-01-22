@@ -46,10 +46,10 @@ training_args = TrainingArguments(
     output_dir='./results',
     eval_strategy='epoch',
     save_strategy='epoch',
-    learning_rate=2e-5,
-    per_device_train_batch_size=8,
-    per_device_eval_batch_size=8,
-    logging_first_step=100,
+    learning_rate=5e-5,
+    per_device_train_batch_size=32,
+    per_device_eval_batch_size=32,
+    logging_steps=5,
     # 总的训练轮数
     num_train_epochs=3,
     weight_decay=0.01,
@@ -80,27 +80,5 @@ trainer.train()
 model.save_pretrained('./sentiment_model')
 tokenizer.save_pretrained('./sentiment_model')
 
-# 测试模型
-test_reviews = [
-    "I absolutely loved this movie! The storyline was captivating and the acting was top-notch. A must-watch for everyone.",
-    "This movie was a complete waste of time. The plot was predictable and the characters were poorly developed.",
-    "An excellent film with a heartwarming story. The performances were outstanding, especially the lead actor.",
-    "I found the movie to be quite boring. It dragged on and didn't really go anywhere. Not recommended.",
-    "A masterpiece! The director did an amazing job bringing this story to life. The visuals were stunning.",
-    "Terrible movie. The script was awful and the acting was even worse. I can't believe I sat through the whole thing.",
-    "A delightful film with a perfect mix of humor and drama. The cast was great and the dialogue was witty.",
-    "I was very disappointed with this movie. It had so much potential, but it just fell flat. The ending was particularly bad.",
-    "One of the best movies I've seen this year. The story was original and the performances were incredibly moving.",
-    "I didn't enjoy this movie at all. It was confusing and the pacing was off. Definitely not worth watching."
-]
-
-model.to('cpu')
-text_list = []
-for review in test_reviews:
-    label = predict(review, model, tokenizer, CLASS_NAME)
-    text_list.append(swanlab.Text(review, caption=f"{label}-{CLASS_NAME[label]}"))
-
-if text_list:
-    swanlab.log({"predict": text_list})
 
 swanlab.finish()

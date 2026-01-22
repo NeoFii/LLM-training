@@ -159,7 +159,7 @@ weight_decay: 0.01
 
 |train|eval|
 |:--:|:--:|
-|![img4](../imgs/chapter1/ch1_4.png)|![img5](../imgs/chapter1/ch2_5.png)|
+|![img4](../imgs/chapter1/ch1_4.png)|![img5](../imgs/chapter1/ch1_5.png)|
 
 最终指标和eval_loss曲线上来看，各个模型存在严重的过拟合。
 
