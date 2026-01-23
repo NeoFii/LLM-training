@@ -19,12 +19,12 @@
 
 | 章节 | 主要内容 | 进度 |
 |------|----------|------|
-| 第一章: 传统模型 | [BERT文本分类](https://docs.swanlab.cn/course/llm_train_course/01-traditionmodel/1.bert/README.html) | [Completed](./chapters/chapter_1/note.md) |
+| ~~第一章: 传统模型~~ | ~~[BERT文本分类](https://docs.swanlab.cn/course/llm_train_course/01-traditionmodel/1.bert/README.html)~~ | ~~[Completed](./chapters/chapter_1/note.md)~~ |
 | 第二章: 预训练 | [从0预训练自己的LLM](https://docs.swanlab.cn/course/llm_train_course/02-pretrain/1.qwen-pretrain/README.html) | Todo |
 | 第三章: 微调 | [LoRA指令微调Qwen3-4B-Base](https://docs.swanlab.cn/course/llm_train_course/03-sft/3.glm4-instruct/README.html) | Todo |
 | 第四章: 强化学习 | [GRPO训练模型玩数独](https://docs.swanlab.cn/course/llm_train_course/04-reinforce/3.sudoku_grpo/README.html) | Todo |
-| 第五章: 评测 | [基于EvalScope模型评测](https://docs.swanlab.cn/course/llm_train_course/05-eval/1.evalscope/README.html) | Todo |
-| 第六章: 语音模型 | [CosyVoice2实现派蒙语音的微调](https://docs.swanlab.cn/course/llm_train_course/07-audio/1.cosyvoice-sft/README.html) | Todo |
+| ~~第五章: 评测~~ | ~~[基于EvalScope模型评测](https://docs.swanlab.cn/course/llm_train_course/05-eval/1.evalscope/README.html)~~ | ~~Cancel~~ |
+| ~~第六章: 语音模型~~ | ~~[CosyVoice2实现派蒙语音的微调](https://docs.swanlab.cn/course/llm_train_course/07-audio/1.cosyvoice-sft/README.html)~~ | ~~Cancel~~ |
 
 ## 📊 实验追踪
 
